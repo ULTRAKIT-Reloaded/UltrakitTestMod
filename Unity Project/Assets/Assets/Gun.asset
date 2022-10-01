@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1351979261, guid: dc7e1e963b967074cb402d6467d35ae5, type: 3}
+  m_Name: Gun
+  m_EditorClassIdentifier: 
+  id: killGun
+  Names:
+  - Gun
+  - Heal Gun
+  - Empty Gun
+  All_Variants: []
+  Variants:
+  - {fileID: 3812097545529750459, guid: c5edf7739522906469f8d1d1c53ac1e6, type: 3}
+  - {fileID: 106149566836903719, guid: 10cd56ee29a7710458fb658705fcdc47, type: 3}
+  - {fileID: 706444130052887850, guid: 8387cba4f68553441a90a9d4db948240, type: 3}
+  AltVariants:
+  - {fileID: 5296008893840106609, guid: 7b0034a5ec21cda4590d35d477c92e36, type: 3}
+  - {fileID: 6054110051692350337, guid: 835af8f236eda3748846dcdebbdef964, type: 3}
+  Icons:
+  - {fileID: 21300000, guid: 04b8e0577d48da24bb3396f50f710b0a, type: 3}
+  - {fileID: 21300000, guid: 74b9ef13ab3d48c4992037b28af1e444, type: 3}
+  - {fileID: 21300000, guid: 74b9ef13ab3d48c4992037b28af1e444, type: 3}
+  Unlocked: 0
+  equipOrder: 
+  equipStatus: 
+  modName: 
