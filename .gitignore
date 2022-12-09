@@ -1,4 +1,5 @@
-.vs
-Assembly-CSharp.dll
+lib/Assembly-CSharp.dll
 bin
 obj
+.vs
+Build
