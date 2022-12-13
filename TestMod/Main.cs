@@ -12,7 +12,8 @@ using System.IO;
 
 namespace TestMod
 {
-    [UKPlugin("Test Mod", "1.0.0", "Testing", false, false)]
+    [UKDependency("petersone1.ultrakitreloaded", "0.0.0")]
+    [UKPlugin("petersone1.testmod", "Test Mod", "1.0.0", "Testing", false, false)]
     public class TestMod : UKMod
     {
         AssetBundle bundle = AssetBundle.LoadFromFile(Directory.GetCurrentDirectory() + @"\BepInEx\UMM Mods\TestMod\testBundle.assetBundle");
