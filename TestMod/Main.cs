@@ -9,10 +9,11 @@ using UnityEngine.SceneManagement;
 using HarmonyLib;
 using System.Collections;
 using System.IO;
+using ULTRAKIT.Loader.Loaders;
 
 namespace TestMod
 {
-    [UKPlugin("Test Mod", "1.0.0", "Testing", false, false)]
+    [UKPlugin("Test Mod", "1.0.1", "Testing", false, false)]
     public class TestMod : UKMod
     {
         AssetBundle bundle = AssetBundle.LoadFromFile(Directory.GetCurrentDirectory() + @"\BepInEx\UMM Mods\TestMod\testBundle.assetBundle");
@@ -21,13 +22,13 @@ namespace TestMod
         {
             Debug.Log("[PETERSONE.test_mod] Mod loaded successfully");
             SceneManager.sceneLoaded += OnSceneLoaded;
-            ULTRAKIT.Loader.WeaponLoader.LoadWeapons(bundle);
+            WeaponLoader.LoadWeapons(bundle);
         }
 
         public override void OnModUnload()
         {
             SceneManager.sceneLoaded -= OnSceneLoaded;
-            ULTRAKIT.Loader.WeaponLoader.UnloadWeapons("testbundle");
+            WeaponLoader.UnloadWeapons("testbundle");
         }
 
         public void OnSceneLoaded(Scene scene, LoadSceneMode mode)

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-using ULTRAKIT.Extensions;
-using ULTRAKIT.Loader;
+using ULTRAKIT.Loader.Loaders;
+using ULTRAKIT.Extensions.Classes;
 
 namespace TestMod
 {
